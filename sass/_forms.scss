@@ -19,5 +19,12 @@
         &:focus {
             outline-color: color(primary);
         }
+
+        @each $condition in $conditions {
+            &.#{$condition}:focus {
+                outline-color: color($condition);
+            }
+        }
+        
     }
 }
