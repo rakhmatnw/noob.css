@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,700");
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 860px; }
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -79,5 +84,21 @@
     .btn-light:hover {
       background: #e4e7f2;
       color: #000; }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+.form-input {
+  width: 100%;
+  font-size: 1em;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0.6em 1.5em;
+  margin-bottom: 1em;
+  background: #f5f6fa;
+  border: solid 2px #e4e7f2;
+  border-radius: 5px; }
+  .form-input:focus {
+    outline-color: #487eb0; }
 
 /*# sourceMappingURL=kecik.css.map */
