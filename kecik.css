@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,700");
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 860px; }
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  background: transparent;
+  color: #2f3640;
+  border: solid 1px #2f3640;
+  border-radius: 5px;
+  padding: 0.6em 1.5em;
+  cursor: pointer;
+  transition: all 0.3s ease; }
+  .btn:focus {
+    outline: none; }
+  .btn:hover {
+    background: #2f3640;
+    color: #fff;
+    transform: translateY(-5px); }
+  .btn:active {
+    transform: translateY(0);
+    background: #2f3640;
+    color: #fff; }
+  .btn:disabled {
+    background: #d3d7e9;
+    color: #fff;
+    border: none;
+    transform: none;
+    cursor: not-allowed; }
+  .btn-rounded {
+    border-radius: 50px; }
+  .btn-primary {
+    border: none;
+    background: #487eb0;
+    color: #fff; }
+    .btn-primary:hover {
+      background: #39648c; }
+  .btn-secondary {
+    border: none;
+    background: #9c88ff;
+    color: #fff; }
+    .btn-secondary:hover {
+      background: #7255ff; }
+  .btn-info {
+    border: none;
+    background: #00a8ff;
+    color: #fff; }
+    .btn-info:hover {
+      background: #0086cc; }
+  .btn-success {
+    border: none;
+    background: #4cd137;
+    color: #fff; }
+    .btn-success:hover {
+      background: #3aad28; }
+  .btn-warning {
+    border: none;
+    background: #fbc531;
+    color: #fff; }
+    .btn-warning:hover {
+      background: #f4b405; }
+  .btn-danger {
+    border: none;
+    background: #e84118;
+    color: #fff; }
+    .btn-danger:hover {
+      background: #ba3413; }
+  .btn-dark {
+    border: none;
+    background: #2f3640;
+    color: #fff; }
+    .btn-dark:hover {
+      background: #454f5d; }
+  .btn-light {
+    border: none;
+    background: #f5f6fa;
+    color: #000; }
+    .btn-light:hover {
+      background: #e4e7f2;
+      color: #000; }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+.form-input {
+  width: 100%;
+  font-size: 1em;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0.6em 1.5em;
+  margin-bottom: 1em;
+  background: #f5f6fa;
+  border: solid 2px #e4e7f2;
+  border-radius: 5px; }
+  .form-input:focus {
+    outline-color: #487eb0; }
+
+/*# sourceMappingURL=kecik.css.map */

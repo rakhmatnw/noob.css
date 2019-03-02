@@ -1,0 +1,66 @@
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    background: transparent;
+    color: color(dark);
+    border: solid 1px color(dark);
+    border-radius: $border-radius;
+    padding: 0.6em 1.5em;
+    cursor: pointer;
+    
+    transition: $transition;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background: color(dark);
+        color: #fff;
+        transform: translateY(-5px);
+    }
+
+    &:active {
+        transform: translateY(0);   
+        background: color(dark);
+        color: #fff;     
+    }
+
+    &:disabled {
+        background: darken(color(light), 10%);
+        color: #fff;
+        border: none;
+        transform: none;
+        cursor: not-allowed;
+    }
+
+    &-rounded {
+        border-radius: 50px;
+    }
+
+    @each $color, $value in $colors {
+        &-#{$color} {
+            border: none;
+            background: $value;
+            @if($color == 'light'){
+                color: #000;
+            }@else{
+                color: #fff;
+            }
+
+            &:hover {
+                @if $color == 'dark' {
+                    background: lighten($value, 10%);
+                }@else if $color == 'light'{
+                    background: darken($value, 5%);
+                    color: #000;
+                }@else {
+                    background: darken($value, 10%);
+                }
+            }
+        }
+    }
+}
