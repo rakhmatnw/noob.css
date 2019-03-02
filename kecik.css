@@ -22,6 +22,14 @@
     transform: translateY(0);
     background: #2f3640;
     color: #fff; }
+  .btn:disabled {
+    background: #d3d7e9;
+    color: #fff;
+    border: none;
+    transform: none;
+    cursor: not-allowed; }
+  .btn-rounded {
+    border-radius: 50px; }
   .btn-primary {
     border: none;
     background: #487eb0;
