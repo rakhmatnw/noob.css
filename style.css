@@ -1,12 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,700');
+HTML {
+    scroll-behavior: smooth;
+}
 
-* {
+aside {
+    background: #fff;
+    width: 300px;
+    overflow-y: scroll;
+    padding: 0 1em;
+    position: fixed;
+    top: 4.1em;
+    left: 0;
+    bottom: 0;
+}
+
+article {
     box-sizing: border-box;
+    padding: 1em;
+    padding-left: 310px;
+    overflow: hidden;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
+section {
+    padding-top: 4em;
 }
+
