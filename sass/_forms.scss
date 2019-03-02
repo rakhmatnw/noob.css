@@ -13,10 +13,18 @@
         margin-bottom: 1em;
         background: color(light);
         border: solid 2px darken(color(light), 5%);
+        border-bottom: solid 5px darken(color(light), 5%);
         border-radius: $border-radius;
 
         &:focus {
             outline-color: color(primary);
         }
+
+        @each $condition in $conditions {
+            &.#{$condition}:focus {
+                outline-color: color($condition);
+            }
+        }
+        
     }
 }
