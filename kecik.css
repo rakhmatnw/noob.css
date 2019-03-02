@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,700");
+* {
+  box-sizing: border-box; }
+
 .container {
   margin: auto;
   width: 100%;
@@ -12,7 +15,7 @@
   font-weight: 700;
   background: transparent;
   color: #2f3640;
-  border: solid 1px #2f3640;
+  border: solid 2px #2f3640;
   border-radius: 5px;
   padding: 0.6em 1.5em;
   cursor: pointer;
@@ -24,9 +27,7 @@
     color: #fff;
     transform: translateY(-5px); }
   .btn:active {
-    transform: translateY(0);
-    background: #2f3640;
-    color: #fff; }
+    transform: translateY(0); }
   .btn:disabled {
     background: #d3d7e9;
     color: #fff;
@@ -37,48 +38,56 @@
     border-radius: 50px; }
   .btn-primary {
     border: none;
+    border-bottom: solid 5px #39648c;
     background: #487eb0;
     color: #fff; }
     .btn-primary:hover {
-      background: #39648c; }
+      background: #41719e; }
   .btn-secondary {
     border: none;
+    border-bottom: solid 5px #7255ff;
     background: #9c88ff;
     color: #fff; }
     .btn-secondary:hover {
-      background: #7255ff; }
+      background: #876fff; }
   .btn-info {
     border: none;
+    border-bottom: solid 5px #0086cc;
     background: #00a8ff;
     color: #fff; }
     .btn-info:hover {
-      background: #0086cc; }
+      background: #0097e6; }
   .btn-success {
     border: none;
+    border-bottom: solid 5px #3aad28;
     background: #4cd137;
     color: #fff; }
     .btn-success:hover {
-      background: #3aad28; }
+      background: #41c22d; }
   .btn-warning {
     border: none;
+    border-bottom: solid 5px #f4b405;
     background: #fbc531;
     color: #fff; }
     .btn-warning:hover {
-      background: #f4b405; }
+      background: #fbbe18; }
   .btn-danger {
     border: none;
+    border-bottom: solid 5px #ba3413;
     background: #e84118;
     color: #fff; }
     .btn-danger:hover {
-      background: #ba3413; }
+      background: #d23a15; }
   .btn-dark {
     border: none;
+    border-bottom: solid 5px #191d23;
     background: #2f3640;
     color: #fff; }
     .btn-dark:hover {
       background: #454f5d; }
   .btn-light {
     border: none;
+    border-bottom: solid 5px #d3d7e9;
     background: #f5f6fa;
     color: #000; }
     .btn-light:hover {
@@ -97,8 +106,15 @@
   margin-bottom: 1em;
   background: #f5f6fa;
   border: solid 2px #e4e7f2;
+  border-bottom: solid 5px #e4e7f2;
   border-radius: 5px; }
   .form-input:focus {
     outline-color: #487eb0; }
+  .form-input.success:focus {
+    outline-color: #4cd137; }
+  .form-input.warning:focus {
+    outline-color: #fbc531; }
+  .form-input.danger:focus {
+    outline-color: #e84118; }
 
 /*# sourceMappingURL=kecik.css.map */
