@@ -1,322 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Noob CSS</title>
-    <link rel="stylesheet" href="noob.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- NAVBAR -->
+    <link rel="stylesheet" href="noob.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/themes/github.min.css"/>
+  </head>
+  <body>
+<!-------- NAVBAR BEGIN -------->
     <nav class="navbar fixed">
-        <div class="navbar-logo left">noob css</div>
+      <div class="navbar-logo left">noob css</div>
     </nav>
+<!-------- NAVBAR END -------->
 
-    <!-- SIDEBAR -->
+<!-------- SIDEBAR BEGIN -------->
     <aside>
+      <ul class="list-unstyled">
+        <li class="list-heading"><a href="#">Getting Started</a></li>
+        <li class="list-heading"><a href="#layout">Layout</a></li>
         <ul class="list-unstyled">
-            <li class="list-heading"><a href="#">Getting Started</a></li>
-            <li class="list-heading"><a href="#">Layout</a></li>
-                <ul class="list-unstyled">
-                    <li><a href="#">Container</a></li>
-                </ul>
-            <li class="list-heading"><a href="#content">Content</a></li>
-                <ul class="list-unstyled">
-                    <li><a href="#typography">Typography</a></li>
-                    <li><a href="#tables">Tables</a></li>
-                </ul>
-            <li class="list-heading"><a href="#components">Components</a></li>
-                <ul class="list-unstyled">
-                    <li><a href="#buttons">Buttons</a></li>
-                    <li><a href="#forms">Forms</a></li>
-                </ul>
-            <li class="list-heading"><a href="#utilities">Utilities</a></li>
+          <li><a href="#container">Container</a></li>
         </ul>
+        <li class="list-heading"><a href="#content">Content</a></li>
+        <ul class="list-unstyled">
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#tables">Tables</a></li>
+        </ul>
+        <li class="list-heading"><a href="#components">Components</a></li>
+        <ul class="list-unstyled">
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#forms">Forms</a></li>
+        </ul>
+        <li class="list-heading"><a href="#utilities">Utilities</a></li>
+      </ul>
     </aside>
-    
-    <!-- MAIN SECTION -->
+<!-------- SIDEBAR END -------->
+
+<!-------- MAIN BEGIN -------->
     <article>
-        <!-- GETTING STARTED -->
-        <div id="start">
-            <h2 class="section-title">Introduction</h2>
-            <p>
-                This is a simple, not fancy at all, mini CSS framework. <br>
-                I made this little framework <strong> not to compete </strong>  with other frameworks out there. <br>
-                This project is just a medium for me to <strong>learn</strong> and be comfortable with <strong>SASS</strong> and <strong>CSS best practices</strong> .
-            </p>
-            <h2 class="section-title">How To Use</h2>
-            <p>I couldn't guarantee you that this frameworks is the best but you are absolutely welcome to try and use it in your project if you want to.</p>
-            <ol>
-                <li>Download kecik.css file <a href="noob.css" download>here</a> </li>
-                <li>Link it to your project</li>
-                <li>Woala! you're ready to use it! 😁</li>
-            </ol>
-        </div>
+<!-------- GETTING STARTED BEGIN -------->
+      <div id="start">
+        <h2 class="section-title">Introduction</h2>
+        <p>
+          This is a simple, not fancy at all, mini CSS framework. <br />
+          I made this little framework <strong> not to compete </strong> with
+          other frameworks out there. <br />
+          This project is just a medium for me to <strong>learn</strong> and be
+          comfortable with <strong>SASS</strong> and
+          <strong>CSS best practices</strong> .
+        </p>
+        <h2 class="section-title">How To Use</h2>
+        <p>
+          I couldn't guarantee you that this frameworks is the best but you are
+          absolutely welcome to try and use it in your project if you want to.
+        </p>
+        <ol>
+          <li>Download noob.css file <a href="noob.css" download>here</a></li>
+          <li>Copy & Paste the link tag on the top you head tag</li>
+<pre>
+<code data-language="html">
+    <link rel="stylesheet" href="noob.css" />
+</code>
+</pre>
+          <li>Woala! you're ready to use it! 😁</li>
+        </ol>
+      </div>
+<!-------- GETTING STARTED END -------->
 
-        <!-- CONTENT -->
-        <div id="content">
-            <section id="typography">
-                <h2 class="section-title">Heading</h2>
-                <table class="table">
-                    <tr>
-                        <td>H1</td>
-                        <td><h1>Heading 1</h1></td>
-                    </tr>
-                    <tr>
-                        <td>H2</td>
-                        <td><h2>Heading 2</h2></td>
-                    </tr>
-                    <tr>
-                        <td>H3</td>
-                        <td><h3>Heading 3</h3></td>
-                    </tr>
-                    <tr>
-                        <td>H4</td>
-                        <td><h4>Heading 4</h4></td>
-                    </tr>
-                    <tr>
-                        <td>H5</td>
-                        <td><h5>Heading 5</h5></td>
-                    </tr>
-                    <tr>
-                        <td>H6</td>
-                        <td><h6>Heading 6</h6></td>
-                    </tr>
-                </table>
+<!-------- LAYOUT BEGIN -------->
+      <div id="layout">
+<!-------- CONTAINER BEGIN -------->
+        <section id="container">
+          <h2 class="section-title">Container</h2>
+          <div class="container" style="height: 100px; background: #aaa;"></div>
+<pre>
+<code data-language="html">
+  <!-- THE INLINE STYLE IS JUST FOR SHOWING THE CONTAINER -->
+  <!-- YOU CAN REMOVE IT -->
+  <div class="container" style="height: 100px; background: #aaa;">
+  <!-- INSERT THE CONTENT HERE -->
+  </div>
+</code>
+</pre>
+        <br><br>
+        </section>
+<!-------- CONTAINER END -------->
+      </div>
+<!-------- LAYOUT END -------->
 
-                <br><br>
+<!-------- CONTENT BEGIN -------->
+      <div id="content">
+<!-------- TYPOGRAPHY BEGIN -------->
+        <section id="typography">
+<!-------- HEADING TEXT BEGIN -------->
+          <h2 class="section-title">Heading</h2>
+          <table class="table">
+            <tr>
+              <td>H1</td>
+              <td><h1>Heading 1</h1></td>
+            </tr>
+            <tr>
+              <td>H2</td>
+              <td><h2>Heading 2</h2></td>
+            </tr>
+            <tr>
+              <td>H3</td>
+              <td><h3>Heading 3</h3></td>
+            </tr>
+            <tr>
+              <td>H4</td>
+              <td><h4>Heading 4</h4></td>
+            </tr>
+            <tr>
+              <td>H5</td>
+              <td><h5>Heading 5</h5></td>
+            </tr>
+            <tr>
+              <td>H6</td>
+              <td><h6>Heading 6</h6></td>
+            </tr>
+          </table>
 
-                <h2 class="section-title">Display</h2>
+<pre>
+<code data-language="html">
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+</code>
+</pre>
+    
+          <br /><br />
+<!-------- HEADING TEXT END -------->
 
-                <table class="table">
-                    <tr>
-                        <td><h1 class="display-1">Display 1</h1></td>
-                    </tr>
-                    <tr>
-                        <td><h1 class="display-2">Display 2</h1></td>
-                    </tr>
-                    <tr>
-                        <td><h1 class="display-3">Display 3</h1></td>
-                    </tr>
-                    <tr>
-                        <td><h1 class="display-4">Display 4</h1></td>
-                    </tr>
-                </table>
+<!-------- DISPLAY TEXT BEGIN -------->
+          <h2 class="section-title">Display</h2>
+          <table class="table">
+            <tr>
+              <td><h1 class="display-1">Display 1</h1></td>
+            </tr>
+            <tr>
+              <td><h1 class="display-2">Display 2</h1></td>
+            </tr>
+            <tr>
+              <td><h1 class="display-3">Display 3</h1></td>
+            </tr>
+            <tr>
+              <td><h1 class="display-4">Display 4</h1></td>
+            </tr>
+          </table>
 
-                <br><br>
+<pre>
+<code data-language="html">
+  <h1 class="display-1">Display 1</h1>
+  <h1 class="display-2">Display 2</h1>
+  <h1 class="display-3">Display 3</h1>
+  <h1 class="display-4">Display 4</h1>
+</code>
+</pre>
 
-                <h2 class="section-title">Inline Text Element</h2>
-                
-                <p>You can use the mark tag to <mark>highlight</mark> text.</p>
-                <p><del>This line of text is meant to be treated as deleted text.</del></p>
-                <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
-                <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
-                <p><u>This line of text will render as underlined</u></p>
-                <p><small>This line of text is meant to be treated as fine print.</small></p>
-                <p><strong>This line rendered as bold text.</strong></p>
-                <p><em>This line rendered as italicized text.</em></p>
-                <p><a href="#">This is a Link</a></p>
-            </section>
+          <br /><br />
+<!-------- DISPLAY TEXT END -------->
 
-            <section id="tables">
-                <h2 class="section-title">Default Tables</h2>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>First</th>
-                            <th>Last</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>John</td>
-                            <td>Doe</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Iwan</td>
-                            <td>Piton</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>El</td>
-                            <td>Seperene</td>
-                        </tr>
-                    </tbody>
-                </table>
+<!-------- INLINE TEXT BEGIN -------->
+          <h2 class="section-title">Inline Text Element</h2>
+          <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+          <p><del>This line of text is meant to be treated as deleted text.</del></p>
+          <p><s>This line of text is meant to be treated as no longeraccurate.</s>    ></p>
+          <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+          <p><u>This line of text will render as underlined</u></p>
+          <p><small>This line of text is meant to be treated as fine print.</small></p>
+          <p><strong>This line rendered as bold text.</strong></p>
+          <p><em>This line rendered as italicized text.</em></p>
+          <p><a href="#">This is a Link</a></p>
 
-                <br><br>
+<pre>
+<code data-language="html">
+  <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+  <p><del>This line of text is meant to be treated as deleted text.</del></p>
+  <p><s>This line of text is meant to be treated as no longeraccurate.</s>    ></p>
+  <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+  <p><u>This line of text will render as underlined</u></p>
+  <p><small>This line of text is meant to be treated as fine print.</small></p>
+  <p><strong>This line rendered as bold text.</strong></p>
+  <p><em>This line rendered as italicized text.</em></p>
+  <p><a href="#">This is a Link</a></p>
+</code>
+</pre>
+        </section>
+<!-------- INLINE TEXT END -------->
+<!-------- TYPOGRAPHY END -------->
 
-            </section>
-        </div>
+<!-------- DEFAULT TABLE BEGIN -------->
+        <section id="tables">
+          <h2 class="section-title">Default Tables</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First</th>
+                <th>Last</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>Doe</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Iwan</td>
+                <td>Piton</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>El</td>
+                <td>Seperene</td>
+              </tr>
+            </tbody>
+          </table>
+<pre>
+<code data-language="html">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>First</th>
+        <th>Last</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>Doe</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Iwan</td>
+        <td>Piton</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>El</td>
+        <td>Seperene</td>
+      </tr>
+    </tbody>
+  </table>
+</code>
+</pre>
+        </section>
+      </div>
+<!-------- DEFAULT TABLE END -------->
 
-        <!-- COMPONENTS -->
-        <div id="components">
-            <!-- BUTTONS -->
-            <section id="buttons">
-                <h2 class="section-title">Default Buttons</h2>
-                <a href="#" class="btn">Anchor Button</a>
-                <button class="btn">Button Element</button>
-                <input class="btn" type="submit" value="Submit Button">
-                <input class="btn" type="button" value="Input Button">
-            
-                <br><br>
+<!-------- CONTENT END -------->
 
-                <h2 class="section-title">Disabled Buttons</h2>
-                <button class="btn" disabled>Disabled Button</button>
-                <button class="btn btn--rounded" disabled>Disabled Button</button>
-                
-                <br><br>
 
-                <h2 class="section-title">Colored Buttons</h2>
-                <button class="btn btn--primary">Primary</button>
-                <button class="btn btn--secondary">secondary</button>
-                <button class="btn btn--info">Info</button>
-                <button class="btn btn--success">success</button>
-                <button class="btn btn--warning">warning</button>
-                <button class="btn btn--danger">danger</button>
-                <button class="btn btn--dark">dark</button>
+<!-------- COMPONENTS BEGIN -------->
+      <div id="components">
+<!-------- DEFAULT BUTTON BEGIN -------->
+        <section id="buttons">
+          <h2 class="section-title">Default Buttons</h2>
+          <a href="#" class="btn">Anchor Button</a>
+          <button class="btn">Button Element</button>
+          <input class="btn" type="submit" value="Submit Button" />
+          <input class="btn" type="button" value="Input Button" />
+<pre>
+<code data-language="html">
+  <a href="#" class="btn">Anchor Button</a>
+  <button class="btn">Button Element</button>
+  <input class="btn" type="submit" value="Submit Button" />
+  <input class="btn" type="button" value="Input Button" />
+</code>
+</pre>
+          <br /><br />
+<!-------- DEFAULT BUTTON END -------->
 
-                <br><br>
+<!-------- DISABLED BUTTON BEGIN -------->
+          <h2 class="section-title">Disabled Buttons</h2>
+          <button class="btn" disabled>Disabled Button</button>
+          <button class="btn btn--rounded" disabled>Disabled Button</button>
+<pre>
+<code data-language="html">
+  <button class="btn" disabled>Disabled Button</button>
+  <button class="btn btn--rounded" disabled>Disabled Button</button>
+</code>
+</pre>
+          <br /><br />
+<!-------- DISABLED BUTTON END -------->
 
-                <h2 class="section-title">Inverted Color Buttons</h2>
-                <button class="btn btn--primary-inverted">Primary</button>
-                <button class="btn btn--secondary-inverted">secondary</button>
-                <button class="btn btn--info-inverted">Info</button>
-                <button class="btn btn--success-inverted">success</button>
-                <button class="btn btn--warning-inverted">warning</button>
-                <button class="btn btn--danger-inverted">danger</button>
-                <button class="btn btn--dark-inverted">dark</button>
-            
-                <br><br>
+<!-------- COLORED BUTTON BEGIN -------->
+          <h2 class="section-title">Colored Buttons</h2>
+          <button class="btn btn--primary">Primary</button>
+          <button class="btn btn--secondary">secondary</button>
+          <button class="btn btn--info">Info</button>
+          <button class="btn btn--success">success</button>
+          <button class="btn btn--warning">warning</button>
+          <button class="btn btn--danger">danger</button>
+          <button class="btn btn--dark">dark</button>
+<pre>
+<code data-language="html">
+  <button class="btn btn--primary">Primary</button>
+  <button class="btn btn--secondary">secondary</button>
+  <button class="btn btn--info">Info</button>
+  <button class="btn btn--success">success</button>
+  <button class="btn btn--warning">warning</button>
+  <button class="btn btn--danger">danger</button>
+  <button class="btn btn--dark">dark</button>  
+</code>
+</pre>
+          <br /><br />
+<!-------- COLORED BUTTON END -------->
 
-                <h2 class="section-title">Rounded Buttons</h2>
-                <button class="btn btn--rounded">Button</button>
-                <button class="btn btn--rounded btn--primary">Primary</button>
-                <button class="btn btn--rounded btn--primary-inverted">Primary</button>
-            
-                <br><br>
+<!-------- INVERTED BUTTON BEGIN -------->
+          <h2 class="section-title">Inverted Color Buttons</h2>
+          <button class="btn btn--primary-inverted">Primary</button>
+          <button class="btn btn--secondary-inverted">secondary</button>
+          <button class="btn btn--info-inverted">Info</button>
+          <button class="btn btn--success-inverted">success</button>
+          <button class="btn btn--warning-inverted">warning</button>
+          <button class="btn btn--danger-inverted">danger</button>
+          <button class="btn btn--dark-inverted">dark</button>
+<pre>
+<code data-language="html">
+  <button class="btn btn--primary-inverted">Primary</button>
+  <button class="btn btn--secondary-inverted">secondary</button>
+  <button class="btn btn--info-inverted">Info</button>
+  <button class="btn btn--success-inverted">success</button>
+  <button class="btn btn--warning-inverted">warning</button>
+  <button class="btn btn--danger-inverted">danger</button>
+  <button class="btn btn--dark-inverted">dark</button>
+</code>
+</pre>
+          <br /><br />
+<!-------- INVERTED BUTTON END -------->
 
-                <h2 class="section-title">Flat Buttons</h2>
-                <button class="btn btn--flat">Button</button>
-                <button class="btn btn--flat btn--primary">Primary</button>
-                <button class="btn btn--flat btn--primary-inverted">Primary</button>
-                
-                <br><br>
+<!-------- ROUNDED BUTTON BEGIN -------->
+          <h2 class="section-title">Rounded Buttons</h2>
+          <button class="btn btn--rounded">Button</button>
+          <button class="btn btn--rounded btn--primary">Primary</button>
+          <button class="btn btn--rounded btn--primary-inverted">Primary</button>
+<pre>
+<code data-language="html">
+  <button class="btn btn--rounded">Button</button>
+  <button class="btn btn--rounded btn--primary">Primary</button>
+  <button class="btn btn--rounded btn--primary-inverted">Primary</button>
+</code>
+</pre>
+          <br /><br />
+<!-------- ROUNDED BUTTON END -------->
 
-            </section>
+<!-------- FLAT BUTTON BEGIN -------->
+          <h2 class="section-title">Flat Buttons</h2>
+          <button class="btn btn--flat">Button</button>
+          <button class="btn btn--flat btn--primary">Primary</button>
+          <button class="btn btn--flat btn--primary-inverted">Primary</button>
+<pre>
+<code data-language="html">
+  <button class="btn btn--flat">Button</button>
+  <button class="btn btn--flat btn--primary">Primary</button>
+  <button class="btn btn--flat btn--primary-inverted">Primary</button>
+</code>
+</pre>
+          <br /><br />
+        </section>
+<!-------- FLAT BUTTON END -------->
 
-            <!-- FORMS -->
-            <section id="forms">
-                <h2 class="section-title">Form Input</h2>
-                <div class="form__group">
-                    <label for="name">Name:</label>
-                    <input class="form__input" type="text" id="name" placeholder="Iwan Piton">
-                </div>
-                <div class="form__group">
-                    <label for="email">Email:</label>
-                    <input class="form__input" type="email" id="email" placeholder="iwanpiton@gmail.com">
-                </div>
-                <div class="form__group">
-                    <label for="pass">Password:</label>
-                    <input class="form__input" type="password" id="pass" placeholder="at least 8 character">
-                </div>
-                <div class="form__group">
-                    <label for="phone">Phone Number:</label>
-                    <input class="form__input" type="number" id="phone" placeholder="+62 8195 8769 778">
-                </div>
-                <div class="form__group">
-                    <label for="textarea">Text Area:</label>
-                    <textarea class="form__input" id="textarea" placeholder="Input your message" rows="3"></textarea>
-                </div>
-                <div class="form__group">
-                    <label for="select">Select Something:</label>
-                    <select id="select" class="form__input">
-                        <option>Select me!</option>
-                        <option>Or me!</option>
-                        <option>Me too!</option>
-                    </select>
-                </div>
-                
-                <br><br>
-        
-                <h2 class="section-title">Form Condition</h2>
-                <div class="form__group">
-                    <label for="success">Success:</label>
-                    <input class="form__input success" type="text" id="success" placeholder="Click me!">
-                </div>
-                <div class="form__group">
-                    <label for="warning">Warning:</label>
-                    <input class="form__input warning" type="text" id="warning" placeholder="Click me!">
-                </div>
-                <div class="form__group">
-                    <label for="danger">Danger:</label>
-                    <input class="form__input danger" type="text" id="danger" placeholder="Click me!">
-                </div>
-                <div class="form__group">
-                    <label for="disabled">Disabled/Readonly:</label>
-                    <input class="form__input danger" type="text" id="disabled" placeholder="You can't click me!" disabled>
-                </div>
 
-                <br><br>
+<!-------- FORM BEGIN -------->
+        <section id="forms">
+<!-------- FORM INPUT BEGIN -------->
+          <h2 class="section-title">Form Input</h2>
+          <form>
+            <div class="form__group">
+              <label for="name">Name:</label>
+              <input class="form__input" type="text" id="name" placeholder="John Doe" />
+            </div>
+            <div class="form__group">
+              <label for="email">Email:</label>
+              <input class="form__input" type="email" id="email" placeholder="johndoe@gmail.com" />
+            </div>
+            <div class="form__group">
+              <label for="pass">Password:</label>
+              <input class="form__input" type="password" id="pass" placeholder="at least 8 character" />
+            </div>
+            <div class="form__group">
+              <label for="phone">Phone Number:</label>
+              <input class="form__input" type="number" id="phone" placeholder="+62 812 4567 839" />
+            </div>
+            <div class="form__group">
+              <label for="textarea">Text Area:</label>
+              <textarea class="form__input" id="textarea" placeholder="Input your message" rows="3"></textarea>
+            </div>
+            <div class="form__group">
+              <label for="select">Select Something:</label>
+              <select id="select" class="form__input">
+                <option>Select me!</option>
+                <option>Or me!</option>
+                <option>Me too!</option>
+              </select>
+            </div>
+          </form>
+<pre>
+<code data-language="html">
+  <form>
+    <div class="form__group">
+      <label for="name">Name:</label>
+      <input class="form__input" type="text" id="name" placeholder="John Doe" />
+    </div>
+    <div class="form__group">
+      <label for="email">Email:</label>
+      <input class="form__input" type="email" id="email" placeholder="johndoe@gmail.com" />
+    </div>
+    <div class="form__group">
+      <label for="pass">Password:</label>
+      <input class="form__input" type="password" id="pass" placeholder="at least 8 character" />
+    </div>
+    <div class="form__group">
+      <label for="phone">Phone Number:</label>
+      <input class="form__input" type="number" id="phone" placeholder="+62 812 4567 839" />
+    </div>
+    <div class="form__group">
+      <label for="textarea">Text Area:</label>
+      <textarea class="form__input" id="textarea" placeholder="Input your message" rows="3"></textarea>
+    </div>
+    <div class="form__group">
+      <label for="select">Select Something:</label>
+      <select id="select" class="form__input">
+        <option>Select me!</option>
+        <option>Or me!</option>
+        <option>Me too!</option>
+      </select>
+    </div>
+  </form>
+</code>
+</pre>
+          <br /><br />
+<!-------- FORM INPUT END -------->
 
-                <h2 class="section-title">Inline Form</h2>
-                <div class="form__group--inline">
-                    <label for="first">First Name</label>
-                    <input class="form__input" type="text" id="first" placeholder="Iwan">
-                </div>
-                <div class="form__group--inline">
-                    <label for="last">Last Name</label>
-                    <input class="form__input" type="text" id="last" placeholder="Piton">
-                </div>
+<!-------- FORM CONDITION BEGIN -------->
+          <h2 class="section-title">Form Condition</h2>
+          <form>
+            <div class="form__group">
+              <label for="success">Success:</label>
+              <input class="form__input success" type="text" id="success" placeholder="Click me!" />
+            </div>
+            <div class="form__group">
+              <label for="warning">Warning:</label>
+              <input class="form__input warning" type="text" id="warning" placeholder="Click me!" />
+            </div>
+            <div class="form__group">
+              <label for="danger">Danger:</label>
+              <input class="form__input danger" type="text" id="danger" placeholder="Click me!"/>
+            </div>
+            <div class="form__group">
+              <label for="disabled">Disabled/Readonly:</label>
+              <input class="form__input danger" type="text" id="disabled" placeholder="You can't click me!" disabled/>
+            </div>
+          </form>
+<pre>
+<code data-language="html">
+  <form>
+    <div class="form__group">
+      <label for="success">Success:</label>
+      <input class="form__input success" type="text" id="success" placeholder="Click me!" />
+    </div>
+    <div class="form__group">
+      <label for="warning">Warning:</label>
+      <input class="form__input warning" type="text" id="warning" placeholder="Click me!" />
+    </div>
+    <div class="form__group">
+      <label for="danger">Danger:</label>
+      <input class="form__input danger" type="text" id="danger" placeholder="Click me!"/>
+    </div>
+    <div class="form__group">
+      <label for="disabled">Disabled/Readonly:</label>
+      <input class="form__input danger" type="text" id="disabled" placeholder="You can't click me!" disabled/>
+    </div>
+  </form>
+</code>
+</pre>
+          <br /><br />
 
-                <br><br>
-        
-                <h2 class="section-title">Checkbox</h2>
-                <div class="form__group">
-                    <label class="form__checkbox">
-                        <input type="checkbox" name="check">
-                        First Checkbox
-                    </label>
-                    <label class="form__checkbox">
-                        <input type="checkbox" name="check">
-                        Second Checkbox
-                    </label>
-                    <label class="form__checkbox">
-                        <input type="checkbox" name="check" disabled>
-                        Disabled Checkbox
-                    </label>
-                </div>
-                
-                <br><br>
-        
-                <h2 class="section-title">Radio Input</h2>
-                <div class="form__group">
-                    <label class="form__radio">
-                        <input type="radio" name="radio">
-                        First Checkbox
-                    </label>
-                    <label class="form__radio">
-                        <input type="radio" name="radio">
-                        Second Checkbox
-                    </label>
-                    <label class="form__radio">
-                        <input type="radio" name="radio" disabled>
-                        Disabled Checkbox
-                    </label>
-                </div>
-            </section>   
-        </div>
+<!-------- FORM CONDITION END -------->
 
-        <!-- UTILITIES -->
-        <div id="utilities">
+<!-------- INLINE FORM BEGIN -------->
+          <h2 class="section-title">Inline Form</h2>
+          <form>
+            <div class="form__group--inline">
+              <label for="first">First Name</label>
+              <input class="form__input" type="text" id="first" placeholder="Iwan" />
+            </div>
+            <div class="form__group--inline">
+              <label for="last">Last Name</label>
+              <input class="form__input" type="text" id="last" placeholder="Piton"/>
+            </div>
+          </form>     
+<pre>
+<code data-language="html">
+  <form>
+    <div class="form__group--inline">
+      <label for="first">First Name</label>
+      <input class="form__input" type="text" id="first" placeholder="Iwan" />
+    </div>
+    <div class="form__group--inline">
+      <label for="last">Last Name</label>
+      <input class="form__input" type="text" id="last" placeholder="Piton"/>
+    </div>
+  </form>
+</code>
+</pre>
+          <br /><br />
+<!-------- INLINE FORM END -------->
 
-        </div>
-    </article> 
-</body>
+<!-------- CHECKBOX FORM BEGIN -------->
+          <h2 class="section-title">Checkbox</h2>
+          <div class="form__group">
+            <label class="form__checkbox">
+              <input type="checkbox" name="check" />
+              First Checkbox
+            </label>
+            <label class="form__checkbox">
+              <input type="checkbox" name="check" />
+              Second Checkbox
+            </label>
+            <label class="form__checkbox">
+              <input type="checkbox" name="check" disabled />
+              Disabled Checkbox
+            </label>
+          </div>
+<pre>
+<code data-language="html">
+  <div class="form__group">
+    <label class="form__checkbox">
+      <input type="checkbox" name="check" />
+      First Checkbox
+    </label>
+    <label class="form__checkbox">
+      <input type="checkbox" name="check" />
+      Second Checkbox
+    </label>
+    <label class="form__checkbox">
+      <input type="checkbox" name="check" disabled />
+      Disabled Checkbox
+    </label>
+  </div>
+</code>
+</pre>
+          <br /><br />
+<!-------- CHECKBOX FORM END -------->
+
+<!-------- RADIO INPUT BEGIN -------->
+          <h2 class="section-title">Radio Input</h2>
+          <div class="form__group">
+            <label class="form__radio">
+              <input type="radio" name="radio" />
+              First Checkbox
+            </label>
+            <label class="form__radio">
+              <input type="radio" name="radio" />
+              Second Checkbox
+            </label>
+            <label class="form__radio">
+              <input type="radio" name="radio" disabled />
+              Disabled Checkbox
+            </label>
+          </div>
+<pre>
+<code data-language="html">
+  <div class="form__group">
+    <label class="form__radio">
+      <input type="radio" name="radio" />
+      First Checkbox
+    </label>
+    <label class="form__radio">
+      <input type="radio" name="radio" />
+      Second Checkbox
+    </label>
+    <label class="form__radio">
+      <input type="radio" name="radio" disabled />
+      Disabled Checkbox
+    </label>
+  </div>
+</code>
+</pre>
+          <br><br>
+<!-------- RADIO INPUT END -------->
+        </section>
+<!-------- FORMS END -------->
+      </div>
+<!-------- COMPONENTS END -------->
+
+<!-------- UTILITIES BEGIN -------->
+      <div id="utilities">
+
+      </div>
+<!-------- UTILITIES END -------->
+    </article>
+<!-------- MAIN END -------->
+    <script src="assets/rainbow-custom.min.js"></script>
+  </body>
 </html>
