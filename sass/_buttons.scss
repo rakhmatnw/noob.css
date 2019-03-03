@@ -4,9 +4,10 @@
     font-size: 1em;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
-    background: transparent;
+    background: $default;
     color: color(dark);
-    border: solid 2px color(dark);
+    border: none;
+    border-bottom: solid 5px darken($default, 5%);
     border-radius: $border-radius;
     padding: 0.6em 1.5em;
     margin-bottom: 0.5em;
@@ -19,8 +20,7 @@
     }
 
     &:hover {
-        background: color(dark);
-        color: #fff;
+        background: darken($default, 1%);
         transform: translateY(-5px);
     }
 
@@ -29,38 +29,34 @@
     }
 
     &:disabled {
-        background: darken(color(light), 10%);
+        background: darken(#f5f6fa, 10%);
         color: #fff;
         border: none;
         transform: none;
         cursor: not-allowed;
     }
 
-    &-rounded {
+    &--rounded {
         border-radius: 50px;
     }
 
     @each $color, $value in $colors {
-        &-#{$color} {
+        &--#{$color} {
             border: none;
             border-bottom: solid 5px darken(color($color), 10%);
             background: $value;
-
-            @if($color == 'light'){
-                color: #000;
-            }@else{
-                color: #fff;
-            }
+            color: #fff;
 
             &:hover {
                 @if $color == 'dark' {
                     background: lighten($value, 10%);
-                }@else if $color == 'light'{
-                    background: darken($value, 5%);
-                    color: #000;
                 }@else {
                     background: darken($value, 5%);
                 }
+            }
+
+            &-inverted {
+                color: $value;
             }
         }
     }
