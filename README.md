@@ -1,5 +1,5 @@
 # Kecik CSS
-"Kecik" means small . This is a simple, not fancy at all, mini CSS UI Framework. 
+This is a simple, not fancy at all, mini CSS UI Framework. 
 
 I made this little framework **not to compete** with other frameworks out there. 
 But this project is just a medium for me to **learn**. 
