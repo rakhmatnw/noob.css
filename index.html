@@ -10,83 +10,153 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1>Kecik UI</h1>
-        <p>Still work in progress</p>
-        <h3>Default Buttons</h3>
-    
-        <a href="#" class="btn">Anchor Button</a>
-        <button class="btn">Button Element</button>
-        <input class="btn" type="submit" value="Submit Button">
-        <input class="btn" type="button" value="Input Button">
-    
-        <h3>Colored Buttons</h3>
-        <button class="btn btn-primary">Primary</button>
-        <button class="btn btn-secondary">secondary</button>
-        <button class="btn btn-info">Info</button>
-        <button class="btn btn-success">success</button>
-        <button class="btn btn-warning">warning</button>
-        <button class="btn btn-danger">danger</button>
-        <button class="btn btn-dark">dark</button>
-        <button class="btn btn-light">light</button>
-    
-        <h3>Rounded Buttons</h3>
-        <button class="btn btn-primary btn-rounded">Primary</button>
-        <button class="btn btn-secondary btn-rounded">secondary</button>
-        <button class="btn btn-info btn-rounded">Info</button>
-        <button class="btn btn-success btn-rounded">success</button>
-        <button class="btn btn-warning btn-rounded">warning</button>
-        <button class="btn btn-danger btn-rounded">danger</button>
-        <button class="btn btn-dark btn-rounded">dark</button>
-        <button class="btn btn-light btn-rounded">light</button>
-    
-        <h3>Disabled Buttons</h3>
-        <button class="btn" disabled>Disabled Button</button>
-    
-        <h3>Form Input</h3>
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input class="form-input" type="text" id="name" placeholder="Iwan Piton">
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input class="form-input" type="email" id="email" placeholder="iwanpiton@gmail.com">
-        </div>
-        <div class="form-group">
-            <label for="pass">Password:</label>
-            <input class="form-input" type="password" id="pass" placeholder="at least 8 character">
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input class="form-input" type="number" id="phone" placeholder="+62 8195 8769 778">
-        </div>
-        <div class="form-group">
-            <label for="textarea">Text Area:</label>
-            <textarea class="form-input" id="textarea" placeholder="Input your message" rows="3"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="select">Select Something:</label>
-            <select id="select" class="form-input">
-                <option>Select me!</option>
-                <option>Or me!</option>
-                <option>Me too!</option>
-            </select>
+    <nav class="navbar fixed">
+        <div class="navbar-logo left">kecik css</div>
+    </nav>
+
+    <aside>
+        <ul class="list-unstyled">
+            <li class="list-heading"><a href="#">Getting Started</a></li>
+            <li class="list-heading"><a href="#">Layout</a></li>
+                <ul class="list-unstyled">
+                    <li><a href="#">Container</a></li>
+                </ul>
+            <li class="list-heading"><a href="#content">Content</a></li>
+            <li class="list-heading"><a href="#components">Components</a></li>
+                <ul class="list-unstyled">
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                </ul>
+            <li class="list-heading"><a href="#utilities">Utilities</a></li>
+        </ul>
+    </aside>
+
+    <article>
+        <!-- GETTING STARTED -->
+        <div id="start">
+            <h2>How To Use</h2>
+            <ol>
+                <li>Download kecik.css file <a href="kecik.css" download>here</a> </li>
+                <li>Link it to your project</li>
+                <li>Woala! you're ready to use it! 😁</li>
+            </ol>
         </div>
 
-        <h3>Form Condition</h3>
-        <div class="form-group">
-            <label for="success">Success:</label>
-            <input class="form-input success" type="text" id="success" placeholder="Click me!">
-        </div>
-        <div class="form-group">
-            <label for="warning">Warning:</label>
-            <input class="form-input warning" type="text" id="success" placeholder="Click me!">
-        </div>
-        <div class="form-group">
-            <label for="danger">Danger:</label>
-            <input class="form-input danger" type="text" id="success" placeholder="Click me!">
-        </div>
-    </div>
+        <section id="components">
+            <!-- BUTTONS -->
+            <section id="buttons">
+                <h2>Default Buttons</h2>
 
+                <a href="#" class="btn">Anchor Button</a>
+                <button class="btn">Button Element</button>
+                <input class="btn" type="submit" value="Submit Button">
+                <input class="btn" type="button" value="Input Button">
+            
+                <h2>Colored Buttons</h2>
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">secondary</button>
+                <button class="btn btn-info">Info</button>
+                <button class="btn btn-success">success</button>
+                <button class="btn btn-warning">warning</button>
+                <button class="btn btn-danger">danger</button>
+                <button class="btn btn-dark">dark</button>
+                <button class="btn btn-light">light</button>
+            
+                <h2>Rounded Buttons</h2>
+                <button class="btn btn-primary btn-rounded">Primary</button>
+                <button class="btn btn-secondary btn-rounded">secondary</button>
+                <button class="btn btn-info btn-rounded">Info</button>
+                <button class="btn btn-success btn-rounded">success</button>
+                <button class="btn btn-warning btn-rounded">warning</button>
+                <button class="btn btn-danger btn-rounded">danger</button>
+                <button class="btn btn-dark btn-rounded">dark</button>
+                <button class="btn btn-light btn-rounded">light</button>
+            
+                <h2>Disabled Buttons</h2>
+                <button class="btn" disabled>Disabled Button</button>
+            </section>
+
+            <!-- FORMS -->
+            <section id="forms">
+                <h2>Form Input</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input class="form-input" type="text" id="name" placeholder="Iwan Piton">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input class="form-input" type="email" id="email" placeholder="iwanpiton@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="pass">Password:</label>
+                    <input class="form-input" type="password" id="pass" placeholder="at least 8 character">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input class="form-input" type="number" id="phone" placeholder="+62 8195 8769 778">
+                </div>
+                <div class="form-group">
+                    <label for="textarea">Text Area:</label>
+                    <textarea class="form-input" id="textarea" placeholder="Input your message" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="select">Select Something:</label>
+                    <select id="select" class="form-input">
+                        <option>Select me!</option>
+                        <option>Or me!</option>
+                        <option>Me too!</option>
+                    </select>
+                </div>
+        
+                <h2>Form Condition</h2>
+                <div class="form-group">
+                    <label for="success">Success:</label>
+                    <input class="form-input success" type="text" id="success" placeholder="Click me!">
+                </div>
+                <div class="form-group">
+                    <label for="warning">Warning:</label>
+                    <input class="form-input warning" type="text" id="success" placeholder="Click me!">
+                </div>
+                <div class="form-group">
+                    <label for="danger">Danger:</label>
+                    <input class="form-input danger" type="text" id="success" placeholder="Click me!">
+                </div>
+        
+                <h2>Checkbox</h2>
+                <div class="form-group">
+                    <label class="form-checkbox">
+                        <input type="checkbox" name="check">
+                        First Checkbox
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="checkbox" name="check">
+                        Second Checkbox
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="checkbox" name="check" disabled>
+                        Disabled Checkbox
+                    </label>
+                </div>
+                
+        
+                <h2>Radio Input</h2>
+                <div class="form-group">
+                    <label class="form-checkbox">
+                        <input type="radio" name="radio">
+                        First Checkbox
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="radio" name="radio">
+                        Second Checkbox
+                    </label>
+                    <label class="form-checkbox">
+                        <input type="radio" name="radio" disabled>
+                        Disabled Checkbox
+                    </label>
+                </div>
+            </section>
+            
+        </section>
+    </article> 
 </body>
 </html>
