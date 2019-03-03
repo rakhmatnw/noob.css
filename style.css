@@ -21,6 +21,12 @@ article {
 }
 
 section {
-    padding-top: 4em;
+    padding: 5em 0;
+    border-bottom: solid 5px #ccc;
+}
+
+.section-title {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
