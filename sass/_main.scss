@@ -5,9 +5,10 @@
 @import 'variables';
 @import 'functions';
 @import 'layouts';
-@import 'typography';
-@import 'tables';
 
-@import 'navbar';
-@import 'buttons';
-@import 'forms';
+@import 'content/typography';
+@import 'content/tables';
+
+@import 'components/navbar';
+@import 'components/buttons';
+@import 'components/forms';
