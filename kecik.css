@@ -89,10 +89,10 @@ td {
   .table th {
     border-top: solid 1px;
     border-bottom: solid 3px;
-    border-color: #e0e0e0; }
+    border-color: #e6e6e6; }
   .table tr {
     border-bottom: solid 1px;
-    border-color: #e0e0e0; }
+    border-color: #e6e6e6; }
 
 .navbar {
   box-sizing: border-box;
@@ -115,10 +115,10 @@ td {
   font-size: 1em;
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
-  background: #f9f9f9;
+  background: #fff;
   color: #2f3640;
-  border: none;
-  border-bottom: solid 5px #ececec;
+  border: solid 1px #f2f2f2;
+  border-bottom: solid 5px #f2f2f2;
   border-radius: 5px;
   padding: 0.6em 1.5em;
   margin-bottom: 0.5em;
@@ -127,18 +127,16 @@ td {
   .btn:focus {
     outline: none; }
   .btn:hover {
-    background: #f6f6f6;
+    background: #fcfcfc;
     transform: translateY(-5px); }
   .btn:active {
     transform: translateY(0); }
   .btn:disabled {
-    background: #d3d7e9;
+    background: #e6e6e6;
     color: #fff;
     border: none;
     transform: none;
     cursor: not-allowed; }
-  .btn--rounded {
-    border-radius: 50px; }
   .btn--primary {
     border: none;
     border-bottom: solid 5px #39648c;
@@ -202,6 +200,10 @@ td {
       background: #454f5d; }
     .btn--dark-inverted {
       color: #2f3640; }
+  .btn--flat {
+    border: none; }
+  .btn--rounded {
+    border-radius: 50px; }
 
 .form__group {
   display: flex;
@@ -223,18 +225,18 @@ td {
   font-family: 'Quicksand', sans-serif;
   padding: 0.6em 1.5em;
   margin-bottom: 1em;
-  background: #f9f9f9;
-  border: solid 2px #ececec;
-  border-bottom: solid 5px #ececec;
+  background: #fff;
+  border: solid 2px #f2f2f2;
+  border-bottom: solid 5px #f2f2f2;
   border-radius: 5px;
   transition: all 0.3s ease; }
   .form__input:focus {
     outline: none;
     border-color: #487eb0; }
   .form__input:disabled {
-    border: solid 2px lightgray;
-    border-bottom: solid 5px lightgray;
-    background: #e0e0e0;
+    border: solid 2px #d9d9d9;
+    border-bottom: solid 5px #d9d9d9;
+    background: #e6e6e6;
     color: #fff;
     cursor: not-allowed; }
   .form__input.success:focus {

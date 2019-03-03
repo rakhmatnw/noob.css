@@ -6,7 +6,7 @@
     font-weight: 700;
     background: $default;
     color: color(dark);
-    border: none;
+    border: solid 1px darken($default, 5%);
     border-bottom: solid 5px darken($default, 5%);
     border-radius: $border-radius;
     padding: 0.6em 1.5em;
@@ -29,15 +29,11 @@
     }
 
     &:disabled {
-        background: darken(#f5f6fa, 10%);
+        background: darken($default, 10%);
         color: #fff;
         border: none;
         transform: none;
         cursor: not-allowed;
-    }
-
-    &--rounded {
-        border-radius: 50px;
     }
 
     @each $color, $value in $colors {
@@ -60,4 +56,13 @@
             }
         }
     }
+
+    &--flat {
+        border: none;
+    }
+
+    &--rounded {
+        border-radius: 50px;
+    }
+
 }
