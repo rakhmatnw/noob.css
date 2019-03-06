@@ -25,4 +25,11 @@ td {
         border-bottom: solid 1px;
         border-color: darken($default, 10%);
     }
+
+    &-striped {
+        tbody tr:nth-child(odd){
+            background: darken($default, 5%);
+        }
+    }
+
 }
